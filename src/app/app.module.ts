@@ -8,13 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { Page404Component } from './components/page404/page404.component';
 import { UploadFilesModule } from './modules/upload-files/upload-files.module';
+import { PrefexWebsitesPipe } from './pipes/prefex-websites.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DashboardComponent,
-    Page404Component
+    Page404Component,
+    PrefexWebsitesPipe
     
   ],
   imports: [
