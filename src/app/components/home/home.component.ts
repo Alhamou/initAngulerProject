@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as uuid from 'uuid';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  uniqueUUID: string;
+
+  constructor() {
+
+    this.uniqueUUID = uuid.v4()
+   }
 
   ngOnInit(): void {
   }
